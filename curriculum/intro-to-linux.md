@@ -1,3 +1,7 @@
+```
+  !! This event should be hosted in the teaching lab so participants can practice using commands !!
+```
+
 # Intro to Linux
 
 ## What is Linux?
