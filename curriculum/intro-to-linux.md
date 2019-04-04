@@ -1,0 +1,68 @@
+# Intro to Linux
+
+## What is Linux?
+
+Linux is a family of operating system like Windows or macOS, but it is free (as in food) and open source (the source code is publicly available).
+All of the lab machines in UTCS run on Linux (Ubuntu with the GNOME Desktop Environment, if you want to be specific).
+
+## The terminal
+
+The program where you type in commands to interact with your computer.
+
+## Anatomy of the terminal
+
+Command and output, username and host, current directory
+
+## Vocab
+
+- **Directory**: Folder
+- **Home Directory**: The ‘main’ folder for your user, usually represented with ‘~’
+- **Root Directory**: The topmost folder of your filesystem, usually represented with ‘/’
+- **Host**: The machine you are connected to
+- **Root/Superuser**: The ‘admin’ user, has no restrictions (on the lab machines, this is the department, on your own machine it’s you!)
+
+## Basic Commands
+
+- `ls`: List the files in your current directory
+- `pwd`: Show your present working directory
+- `cd [a]`: Change directories to [a], cd by itself returns to ~ (home)
+- `touch [a]`: Make the file [a]
+- `cat [a]`: Print the contents of [a] (technically it’s made to concatenate files but it’s mainly used to print the contents)
+- `mkdir [a]`: Make the directory [a]
+- `mv [a] [b]`: Move file/dir [a] to file/dir [b] (also used to rename)
+- `cp [a] [b]`: Copy file/dir[a] to file/dir [b]
+- `rm [a]`: Remove the file [a] (to remove a folder, add -rf flags)
+- `man [a]`: Show the manual pages for the command [a]
+
+## Anatomy of a Linux Command
+
+```
+rm -rf foobar.txt /foo
+```
+
+- **Command**: The command to be run, in this case, remove.
+- **Flags**: Optional settings you can turn on for this command. They are always preceded by a ‘-’. Here the ‘r’ means recursive (delete all sub-directories and files) and the ‘f’ means force (don’t confirm that I want to delete these files).
+- **Arguments**: The inputs the command needs. Here, these are the files/dirs to delete. Arguments are separated by spaces
+
+## Directory Structure
+
+- `.`: current directory
+- `..`: parent directory
+
+## Chaining Commands
+
+- `foo && bar`: Run ‘foo’ command, and if it finishes successfully, then run ‘bar’
+- `foo; bar`: Run ‘foo’ command, and then run ‘bar’, whether or not ‘foo’ finished successfully
+
+## Challenge
+
+0. Log into lab machine
+1. Navigate to home directory
+2. Make a directory called test
+3. Navigate into test (and check your present working directory)
+4. Make a file called foo
+5. Run echo ‘hello’ > foo to put ‘hello’ into the file foo
+6. Copy the file foo to the file bar
+7. List the files in the directory to check you have two files
+8. Move the file bar to the file baz to rename it
+9. Remove the file baz
