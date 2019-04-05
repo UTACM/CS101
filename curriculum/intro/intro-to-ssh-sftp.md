@@ -1,0 +1,78 @@
+# Intro to SSH and (S)FTP
+
+## What is SSH?
+
+SSH stands for **S**ecure **SH**ell, and it allows you to remotely access the command line of another machine. In the CS department, people often use SSH to connect to the lab machines from their personal laptops. The best part is, you can SSH from anywhere! You don't have to be in the GDC or even on campus. 
+
+## The SSH command
+
+```
+ssh <utcs-username>@<lab-machine-name>.cs.utexas.edu
+```
+
+You will then be prompted to input your UTCS password.
+
+List of available lab machine can be found [here](https://apps.cs.utexas.edu/unixlabstatus/)
+
+## How do you SSH?
+
+### On Windows
+
+Using the PuTTY program, fill in the appropriate credentials, then connect!
+
+### On Mac
+
+Run `ssh <utcs-username>@<lab-machine-name>.cs.utexas.edu` in your terminal, enter your password, and you're connected!
+
+## Now what?
+
+The command line works just as if you were sitting at a machine in one of the labs. You can interact with it like any other Linux terminal. To exit, call `exit`.
+
+## What is (S)FTP?
+
+(S)FTP stand for **S**ecure **F**ile **T**ransfer **P**rotocol. It's used to securely transfer files between machines. This is useful for testing CS312/CS314 code on the lab machines, since most assignments in UTCS are graded on the lab machines.
+
+## Some vocab
+
+- `Local machine`: the machine you have in front of you
+- `Remote machine`: the machine you are accessing remotely, in this case the lab machine
+
+## (S)FTP with FileZilla
+
+Download FileZilla from [here](https://filezilla-project.org/download.php). It's available for Windows, macOS and Linux!
+
+- Enter lab machine name for `host`
+- Enter UTCS username for `username`
+- Enter UTCS password for `password`
+- Enter 22 for `port`
+- Connect!
+
+The left window shows the filesystem on your local machine, and the right window shows the remote filesystem. Simply drag and drop files to transfer them!
+
+## (S)FTP with the Command Line
+
+```
+sftp <utcs-username>@<lab-machine-name>.cs.utexas.edu
+```
+
+- `help` to see command help
+- `ls` to show contents of remote directory
+- `lls` to show contents of local directory
+- `cd` to change directories on remote machine
+- `lcd` to change directories locally
+- `get <remote-path> <local-path>` to copy file at `remote-path` to file at `local-path `
+- `get -r <remote-path> <local-path>` to copy directory recursively at `remote-path` to file at `local-path `
+- `put <local-path> <remote-path>` to copy file at `local-path` to file at `remote-path `
+- `put -r <local-path> <remote-path>` to copy directory recursively at `local-path` to file at `remote-path `
+- `bye` to exit the SFTP session
+
+## A challenge
+
+0. SSH into your lab machine and make a directory named `foo`
+1. Add a file in `foo` called `bar`
+2. Disconnect from the SSH session
+3. Connect to the same lab machine with SFTP
+4. Navigate to `bar` and download it to your local machine
+5. Make a file called `baz` on your local machine
+6. Copy `baz` to the directory `foo` on the remote machine
+7. Delete the folder `foo` (and its contents) and disconnect from the SFTP session
