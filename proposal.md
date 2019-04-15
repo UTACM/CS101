@@ -6,7 +6,7 @@ For a lot of Computer Science freshmen, their first semester is the first time t
 
 ## Topics
 
-After having surveyed current UTCS students, I have compiled a list of topics that I think would be helpful to the greatest amount of students.
+After having surveyed current UTCS students, I have compiled a list of topics that I think would be helpful to the greatest amount of students. These are also listed in a tentative order of events.
 
 ### Introductory topics
 
@@ -21,19 +21,20 @@ After having surveyed current UTCS students, I have compiled a list of topics th
 
 - Git/VCS basics
   - How to make repositories, how to add and commit files, how to push and pull from remote repo, how to set up a GitHub/GitLab/BitBucket account, how to collaborate with classmates
+- Linux advanced
+  - How to use command line tools like `awk`, `sed`, `grep`, `ln`, `tar`, `man`, `chmod`, `kill/killall`, `top`, etc.
 - Debugging basics
   - How to use the Java/JS/C/C++ debugger, how to add breakpoints, how to view registers and memory
 - Editors advanced
   - How to navigate and use `vim`/`emacs`, since they are very useful when SSH'ed into a lab machines
-- Linux advanced
-  - How to use command line tools like `awk`, `sed`, `grep`, `ln`, `tar`, `man`, `chmod`, `kill/killall`, `top`, etc.
 
 ### Time-permitting topics
 
-- Customization
-  - How to change shells, introduce things like `oh-my-zsh`, `vim`/`emacs` plugins,`.__shprofile`/`.__shrc`.
 - Scripting
   - How to use bash, Python, cron, etc. to simplify tasks
+- Customization
+  - How to change shells, introduce things like `oh-my-zsh`, `vim`/`emacs` plugins,`.__shprofile`/`.__shrc`.
+
 
 ## Structure
 
@@ -43,13 +44,12 @@ This series would span the entire school year, with the 'introductory' topic eve
 
 ### Event specifics
 
-The events would be 1-1.5 hour long events. The presentations themselves should be short to allow for lots of time to field questions and help people one-on-one. There would also be a lot of examples and interactive steps to allow students to practice these new skills. The slides would also be posted before the event so that people could work through them at their own pace, as well as reference them after the event itself. We would draw our speakers from members and officers of ACM, as well as officers from other organizations that may have more expertise than ourselves. 
+The events would be 1-1.5 hour long events. The presentations themselves should be short to allow for lots of time to field questions and help people one-on-one. There would also be a lot of examples and interactive steps to allow students to practice these new skills. The slides would also be posted before the event so that people could work through them at their own pace, as well as reference them after the event itself. We would draw our speakers from members and officers of ACM, as well as officers from other organizations that may have more expertise than ourselves.
 
 ### Officers
 
-This series would mainly be a collaboration between the Academics and Web Officers, since these workshops are education-focused but also require some technical knowledge to make and teach/
+This series would mainly be a collaboration between the Academics and Web Officers, since these workshops are education-focused but also require some technical knowledge to make and teach.
 
 ## Other Notes
 
 - Our current web workshops could be absorbed into this series in order to improve numbers for both types of events. Or, if we want to keep web workshops independent, we could advertise for CS101 during those events (and vice versa) since the two events are very similar.
-
