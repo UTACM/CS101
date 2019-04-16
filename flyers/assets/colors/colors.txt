@@ -1,0 +1,5 @@
+Main Orange: #C05B07
+Main Navy: #22292D
+
+Light Orange: #E2893E
+Light Navy: #536671
