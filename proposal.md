@@ -35,7 +35,6 @@ After having surveyed current UTCS students, I have compiled a list of topics th
 - Customization
   - How to change shells, introduce things like `oh-my-zsh`, `vim`/`emacs` plugins,`.__shprofile`/`.__shrc`.
 
-
 ## Structure
 
 ### Timeline
